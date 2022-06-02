@@ -42,6 +42,9 @@
 	<!--Log out the user-->
 	<form action="user_login.php" method="POST">
 		<input type="submit" value="Log out" />
+		<?php
+			session_destroy();
+		?>
 	</form>
 </body>
 </html>
